@@ -29,7 +29,7 @@ public class UserController {
         return userService.getAllUsers();
     }
 
-    @GetMapping(path = "/findBy/{userName}")
+    @GetMapping(path = "/findbyname/{name}")
     public List<User> getAllUserByName(
             @PathVariable("name") String userName) {
         return userService.findUsersByName(userName);
